@@ -1,7 +1,6 @@
 package com.ps.registro.services;
 
 import com.ps.registro.modelo.Registro;
-import org.springframework.stereotype.Service;
 public class RegistroService {
 
 
