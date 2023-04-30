@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.util.Date;
-@Table
+@Table(name = "persona")
 @Entity
 @Data
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
@@ -24,8 +24,8 @@ public class Persona {
     @Column(name="apellidos", nullable=false, length=100)
     private String apellidos;
 
-    @Column(name="fechaNacimiento", nullable=false)
-    private Date fechaNacimiento;
+    @Column(name="fechanacimiento", nullable=false)
+    private Date fechanacimiento;
 
     @Column(name="telefono", length=20)
     private String telefono;
